@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #800000; /* Maroon */
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.sidebar-header {
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar-nav ul li a:hover, .sidebar-nav ul li a.active {
+    background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Top Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000; /* Maroon */
+    padding: 10px;
+    color: white;
+}
+
+/* Align user info (profile icon) to the right */
+.top-header .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-header .user-info i {
+    margin-right: 10px;
+}
+
+.top-header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* User Form */
+.user-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.user-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #800000; /* Maroon */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a0000;
+}
+
+/* User Table */
+.user-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table table th, .user-table table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.user-table table th {
+    background-color: #800000;
+    color: white;
+}
+
+.user-table table td {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .top-header {
+        flex-direction: column;
+    }
+}

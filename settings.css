@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #800000; /* Maroon */
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.sidebar-header {
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar-nav ul li a:hover, .sidebar-nav ul li a.active {
+    background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Top Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000; /* Maroon */
+    padding: 10px;
+    color: white;
+}
+
+.top-header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.top-header .user-info i {
+    margin-right: 10px;
+}
+
+.top-header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Settings Section */
+.settings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.settings-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.settings-form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.settings-form input,
+.settings-form select,
+.settings-form button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.settings-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 48%;
+    cursor: pointer;
+}
+
+.settings-form .submit-btn {
+    background-color: #800000; /* Maroon */
+    color: white;
+    border: none;
+}
+
+.settings-form .submit-btn:hover {
+    background-color: #6a0000;
+}
+
+.settings-form .cancel-btn {
+    background-color: #ccc;
+    color: black;
+    border: none;
+}
+
+.settings-form .cancel-btn:hover {
+    background-color: #999;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .top-header {
+        flex-direction: column;
+    }
+}
